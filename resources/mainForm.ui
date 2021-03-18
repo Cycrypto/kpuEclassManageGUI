@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>662</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="title">
+         <string>과목 보기</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QTableWidget" name="showSubTable">
+           <row>
+            <property name="text">
+             <string>과목</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>교수</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>교재</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>반영 비율</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>학점/시간</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>일정</string>
+            </property>
+           </row>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="subInfoCombo"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="title">
+         <string>공지 사항</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QTableWidget" name="showInformTable"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="informTotalCnt">
+             <property name="text">
+              <string>총 수량 :</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="anceShowBtn">
+             <property name="text">
+              <string>바로 보기</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="ancePageBtn">
+             <property name="text">
+              <string>페이지 이동</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="title">
+         <string>과제 제출</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QTableWidget" name="showSubmitTable">
+             <column>
+              <property name="text">
+               <string>제목</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>제출여부</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>진행도</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>마감일</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>점수</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="hwSubmitBtn">
+             <property name="text">
+              <string>과제 제출</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="hwPageBtn">
+             <property name="text">
+              <string>페이지 이동</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_4">
+        <property name="title">
+         <string>스케줄 관리</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QCalendarWidget" name="calendarWidget"/>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QDateEdit" name="dateEdit"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="dateEdtBtn">
+             <property name="text">
+              <string>추가/삭제</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="chkScheduleBtn">
+             <property name="text">
+              <string>일정 확인</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>설정</string>
+    </property>
+    <addaction name="actionLogIn"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>기타 기능</string>
+    </property>
+    <addaction name="actionShow_Message"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLogIn">
+   <property name="text">
+    <string>Change Account</string>
+   </property>
+  </action>
+  <action name="actionShow_Message">
+   <property name="text">
+    <string>Show Message</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
